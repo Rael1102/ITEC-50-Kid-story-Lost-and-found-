@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short story</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('1.jpg'); 
+            background-size: cover;
+            background-position: center;
+            font-family: Garamond, serif; 
+            margin: 0;
+            padding: 0;
+        }
+        .blur-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1; 
+            filter: blur(5px); 
+            background-image: inherit; 
+            background-size: cover; 
+            background-position: center; 
+        }
+        header {
+            position: relative; 
+            background-color: transparent; 
+            padding: 20px;
+            text-align: center;
+        }
+        .story-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            padding: 2% 0; 
+            position: relative;
+        }
+        .text-placeholder {
+            padding: 1%;
+            text-align: center;
+            font-size: 2vw; 
+            font-family: 'Lunchbox'; 
+            font-weight: bold;
+        }
+        .text-placeholder.left-top {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+        }
+        .text-placeholder.right-top {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+        }
+        .text-placeholder.left-bottom {
+            position: absolute;
+            bottom: 2%;
+            left: 2%;
+        }
+        .text-placeholder.right-bottom {
+            position: absolute;
+            bottom: 2%;
+            right: 2%;
+        }
+        footer {
+            background-color: transparent; 
+            color: #000; 
+            text-align: center;
+            padding: 1%;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .text-placeholder {
+                font-size: 10vw; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-container"></div>
+    <header>
+        <h1>Lost and found</h1>
+    </header>
+
+    <div class="container">
+        <div class="story-img">
+            <img src="1.jpg" alt="Image 1" class="story-image left-image">
+        </div>
+        <div class="story-img">
+            <img src="2.jpg" alt="Image 2" class="story-image right-image">
+            <div class="text-placeholder">Not here, not there. Where have you gone?</div>
+        </div>
+        <div class="story-img">
+            <img src="3.jpg" alt="Image 3" class="story-image left-image">
+            <div class="text-placeholder">Not under the sofa. Not under the cot.</div>
+        </div>
+        <div class="story-img">
+            <img src="4.jpg" alt="Image 4" class="story-image right-image">
+            <div class="text-placeholder">Not in the box. Not in my sister's frock.</div>
+        </div>
+        <div class="story-img">
+            <img src="5.jpg" alt="Image 5" class="story-image left-image">
+            <div class="text-placeholder">Not under my pillow. Not in my bag. Sob, sob, where have you gone?</div>
+        </div>
+        <div class="story-img">
+            <img src="6.jpg" alt="Image 6" class="story-image right-image">
+            <div class="text-placeholder">I have looked in every room, I have looked under every book</div>
+        </div>
+        <div class="story-img">
+            <img src="7.jpg" alt="Image 7" class="story-image left-image">
+            <div class="text-placeholder">I have looked under the chair, I have looked under the stool. Where have you gone?</div>
+        </div>
+        <div class="story-img">
+            <img src="8.jpg" alt="Image 8" class="story-image right-image">
+            <div class="text-placeholder">Soon granny came back from her walk. "Look what i have found in the park!".</div>
+        </div>
+        <div class="story-img">
+            <img src="9.jpg" alt="Image 9" class="story-image left-image">
+            <div class="text-placeholder">"It can sway, it can bounce. It can spin it can dangle. Ha-hee, hee-hee," said Granny with a giggle."</div>
+        </div>
+        <div class="story-img">
+            <img src="10.jpg" alt="Image 10" class="story-image right-image">
+            <div class="text-placeholder">"Oh Granny thank you so much! You have found my dear yo-yo!"</div>
+        </div>
+        <div class="story-img">
+            <img src="11.jpg" alt="Image 11" class="story-image left-image">
+            <div class="text-placeholder">"Yo-yo? what a funny name! What a funny toy! I want to play with it, it gives me so much joy!"</div>
+        </div>
+        <div class="story-img">
+            <img src="12.jpg" alt="Image 12" class="story-image right-image">
+            <div class="text-placeholder">Giggle, giggle, giggling away, Granny played, with my little toy. For the rest of the day!</div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Sorry na po sir Gole hehe</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
